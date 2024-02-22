@@ -11,13 +11,13 @@ The goals are:
 
 ## Development Environment
 
-  - Cloud: GCP
-  - Infrastructure as code (IaC): Terraform
-  - Workflow orchestration: Prefect
-  - Data Warehouse: BigQuery
-  - Data Lake: Google Cloud Storage
-  - Batch processing/Transformations: dbt cloud and Spark
-  - Dashboard: Google Data Looker Studio
+  - Cloud Provider: Google Cloud Platform (GCP)
+  - Infrastructure Automation: Terraform for Infrastructure as Code (IaC)
+  - Workflow Management: Prefect for orchestration
+  - Data Storage: BigQuery for Data Warehousing
+  - Data Lake Storage: Google Cloud Storage
+  - Batch Processing and Transformations: Utilizing dbt cloud and Spark
+  - Dashboard Creation: Google Data Looker Studio
     
 ## Architecture of the Project
 
