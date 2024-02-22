@@ -9,7 +9,7 @@ The goals are:
 - Perform data transformation within the data warehouse to prepare it for dashboard integration.
 - Construct a dashboard using Data Studio to visualize the prepared data.
 
-## Technologies
+## Development Environment
 
   - Cloud: GCP
   - Infrastructure as code (IaC): Terraform
@@ -19,7 +19,7 @@ The goals are:
   - Batch processing/Transformations: dbt cloud and Spark
   - Dashboard: Google Data Looker Studio
     
-## Project Architecture
+## Architecture of the Project
 
   - Data is fetched in batches and then stored in Google Cloud Storage.
   - Following this, the data undergoes preprocessing using PySpark before being migrated to a Data Warehouse, specifically BigQuery.
