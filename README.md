@@ -8,3 +8,13 @@ The goals are:
 - Develop a batch pipeline to transfer the data from the data lake to a data warehouse.
 - Perform data transformation within the data warehouse to prepare it for dashboard integration.
 - Construct a dashboard using Data Studio to visualize the prepared data.
+
+## Technologies
+
+  - Cloud: GCP
+  - Infrastructure as code (IaC): Terraform
+  - Workflow orchestration: Prefect
+  - Data Warehouse: BigQuery
+  - Data Lake: Google Cloud Storage
+  - Batch processing/Transformations: dbt cloud and Spark
+  - Dashboard: Google Data Looker Studio
