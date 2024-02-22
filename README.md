@@ -18,3 +18,10 @@ The goals are:
   - Data Lake: Google Cloud Storage
   - Batch processing/Transformations: dbt cloud and Spark
   - Dashboard: Google Data Looker Studio
+    
+## Project Architecture
+
+  - Data is fetched in batches and then stored in Google Cloud Storage.
+  - Following this, the data undergoes preprocessing using PySpark before being migrated to a Data Warehouse, specifically BigQuery.
+  - Once in the Data Warehouse, the data undergoes transformation and preparation to make it suitable for visualization purposes.
+  - Finally, dashboards are created to present the processed data effectively.
