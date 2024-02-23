@@ -1,14 +1,14 @@
 version: 2
 sources:
   - name: dwh
-    database: gh-archive-345218
+    database: final-project-zoomcamp-2024 
     schema: gh_archive_all
     tables:
       - name: gh_external_table
-        location: 'gs://data_lake_gh-archive-345218/raw/*'
+        location: 'gs://data_lake_final-project-zoomcamp-2024/raw/*'
         options:
           format: parquet
-          hive_partition_uri_prefix: 'gs://bucket/path/'
+          hive_partition_uri_prefix: 'gs://data_lake_final-project-zoomcamp-2024/path/'
 
 models:
   - name: dwh_days
