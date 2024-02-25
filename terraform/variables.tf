@@ -25,7 +25,7 @@ variable "storage_class" {
 variable "BQ_DATASET" {
   description = "The name of the BigQuery dataset where raw data from Google Cloud Storage  will be stored."
   type = string
-  default = "pardub_dataset"  // Default BigQuery dataset name
+  default = "gh_archive_all"  // Default BigQuery dataset name
 }
 
 // Google Cloud Storage Bucket Name
