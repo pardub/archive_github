@@ -8,7 +8,7 @@ sources:
         location: 'gs://data_lake_final-project-zoomcamp-2024/raw/*'
         options:
           format: parquet
-          hive_partition_uri_prefix: 'gs://data_lake_final-project-zoomcamp-2024/path/'
+          hive_partition_uri_prefix: 'gs://data_lake_final-project-zoomcamp-2024/'
 
 models:
   - name: dwh_days
