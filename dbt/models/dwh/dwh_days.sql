@@ -10,5 +10,9 @@
     )
 }}
 
-SELECT *
-FROM {{ source('dwh', 'gh_external_table') }}
+SELECT 
+    *,
+    -- Fix the timestamp and overwrite the original 'created_at' column
+    TIMESTAMP_MICROS(CAST(created_at / 1000 AS INT64)) AS created_at
+FROM 
+    {{ source('dwh', 'gh_external_table') }}
