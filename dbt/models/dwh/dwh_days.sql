@@ -12,3 +12,4 @@
 
 SELECT *
 FROM {{ source('dwh', 'gh_external_table') }}
+
