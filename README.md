@@ -143,3 +143,17 @@ gcloud compute instances list
       - run this command echo `'export PATH="${HOME}/bin:${PATH}"' >> ~/.bashrc`  to update your path environment variable: 
  
 Logout from your session and login again or run  `source .bashrc` to reload the path environment variable
+
+## Terraform
+- Installation:
+  
+```sh
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+```
+```sh
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+```
+```sh
+sudo apt-get update && sudo apt-get install terraform
+```
+
