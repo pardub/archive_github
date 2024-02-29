@@ -156,4 +156,56 @@ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(l
 ```sh
 sudo apt-get update && sudo apt-get install terraform
 ```
+## Establish the project's infrastructure using Terraform
 
+Clone this projet in your vm
+```sh
+git clone https://github.com/pardub/archive_github.git
+```
+Go to `archive_github/terraform/`
+
+Run:
+```sh
+terraform init
+```
+```sh
+terraform plan
+```
+
+```sh
+terraform apply
+```
+
+Now, ensure that you've successfully set up a bucket named "data_lake" and a dataset named "gh-archive-all" in Google BigQuery.
+
+
+## Establish data ingestion using Airflow.
+
+- Go to `archive_github/airflow`
+- Run the following command and write down the output:
+```sh
+echo -e "AIRFLOW_UID=$(id -u)"
+```
+- Access the `.env` file and update the AIRFLOW_UID value to match the output of the preceding command.
+- Update the `GCP_PROJECT_ID` with your Google Cloud project ID and replace `GCP_GCS_BUCKET` with the name of your bucket.
+- Build the custom Airflow Docker image: 
+```sh
+docker-compose build
+```
+- Initialize the Airflow configs:
+```sh
+docker-compose up airflow-init
+```
+- Start airflow
+```sh
+docker-compose up
+```
+
+- You can now view the Airflow web interface by navigating to localhost:8080. Use "airflow" as both the username and password.
+
+## Execute the data ingestion process
+- This DAG retrieves data from February 1, 2024, up to February 27, 2024.
+- You can modify the start date and end date by editing the variables `start_date` and `end_date` in the data_ingestion.py file.
+- To trigger the DAG, toggle the switch icon next to the DAG name. It will fetch data from the specified start date to the latest available hour and perform hourly checks every 30 minutes.
+- After ingestion, you can stop Airflow by running `docker-compose down` in the airflow folder where the `docker-compose.yaml` file is located.
+- Remember to power off the VM in Google Cloud Platform to prevent incurring unnecessary costs.
