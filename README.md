@@ -13,7 +13,7 @@ The goals are:
 
   - Cloud Provider: Google Cloud Platform (GCP)
   - Infrastructure Automation: Terraform for Infrastructure as Code (IaC)
-  - Workflow Management: Prefect for orchestration
+  - Workflow Management: Airflow for orchestration
   - Data Storage: BigQuery for Data Warehousing
   - Data Lake Storage: Google Cloud Storage
   - Batch Processing and Transformations: Utilizing dbt cloud and Spark
@@ -234,3 +234,16 @@ docker-compose up
 `df['created_at'] = pd.to_datetime(df['created_at']).dt.strftime('%Y-%m-%d %H:%M:%S')`
 - This adjustment allowed dbt run to execute successfully.
 
+## Rolling out models in dbt Cloud in a Production environment
+Here's how to deploy models in dbt Cloud with a Production environment:
+
+- Click on the menu in the top left corner and select "Environments".
+- Click on the "New Environment" button located in the top right corner.
+- Provide a name for the environment (e.g., "Production"). Ensure that the environment type is set to "Deployment". In the Credentials section, you can specify a name in the Dataset field, which will add a prefix to the schemas. 
+- Create a new job with the following settings:
+- Give it a name (e.g., `dbt start`).
+- Choose the environment created in the previous step.
+- In the Commands section, add the command `dbt run`.
+- In the Triggers section, within the Schedule tab, ensure that the "Run on schedule?" checkbox is selected.
+- Choose a custom cron schedule and input the string `40 * * * *`. This will execute the models every hour at the 40th minute. (Note: the DAG runs on the 30th minute, so the 10-minute delay ensures that the DAG is successfully executed.)
+- Save the job.
