@@ -212,3 +212,25 @@ docker-compose up
 
 ## Establishing the configuration for dbt Cloud.
 
+- Sign up for a dbt Cloud account at https://www.getdbt.com/signup.
+- Create a new project and name it, such as `gh-archive`. In the Advanced settings, set the Project subdirectory to `dbt`.
+- Choose BigQuery as the database connection.
+- Configure the following settings:
+  - You can keep the default connection name.
+  - Upload the Service Account JSON file, selecting the "google_credentials.json" created previously.
+  - Ensure to input your Google Cloud location under Location (for e.g., US).
+  - Under Development credentials, specify a name for the dataset. This name will be added as a prefix to the schemas. For example, use "dbt".
+  - Test the connection, and click Continue once the connection is successfully tested.
+- In the Add repository form, select GitHub and choose your fork from your user account. Alternatively, you can provide a URL and clone the repo.
+- Once the project is created, navigate to the menu on the top left and click Develop to load the dbt Cloud IDE.
+- You can now run the `dbt run` command in the bottom prompt to execute all models. This will generate three different datasets in BigQuery:
+    - `dbt_core`: Contains the end-user tables.
+    - `dbt_dwh`: Stores the data warehouse materialized table with all ingested data.
+    - `dbt_staging`: Contains the staging views for generating the final end-user tables.
+
+- Just for your information, I encountered some issues while running dbt run. The issue emerged due to errors related to the timestamp format for the `created at` field.
+- To resolve this, I had to include the following line in the Airflow DAG:
+
+`df['created_at'] = pd.to_datetime(df['created_at']).dt.strftime('%Y-%m-%d %H:%M:%S')`
+- This adjustment allowed dbt run to execute successfully.
+
