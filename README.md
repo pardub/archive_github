@@ -116,4 +116,30 @@ gcloud compute instances list
 - ```sh
   gcloud compute instances stop <my_instance>
   ```
-## Setting up the necessary software on the virtual machine
+## Setting up the necessary tools on the virtual machine
+- connect to your vm by ssh.
+- Install Docker :
+  ```sh
+  sudo apt update && sudo apt -y upgrade
+  ```
+  ```sh
+  run sudo sudo groupadd docker
+   ```
+   ```sh
+  sudo gpasswd -a $USER docker
+  ```
+   ```sh
+  sudo service docker restart
+  ```
+- test with docker by doing `run hello-world` to make sure Docker is correctly installed  on your vm.
+ - Install Docker Compose :
+    - Create a folder bin in your home account with `mkdir ~/bin`
+    - Go to the folder with `cd ~/bin`
+    - Download Docker Compose
+    ```sh
+    wget https://github.com/docker/compose/releases/download/v2.24.6/docker-compose-linux-x86_64 -O docker-compose
+    ```
+      -  Make doker compose file executable with ```sh chmod +x docker-compose```
+      - run this command echo `'export PATH="${HOME}/bin:${PATH}"' >> ~/.bashrc`  to update your path environment variable: 
+ 
+Logout from your session and login again or run  `source .bashrc` to reload the path environment variable
