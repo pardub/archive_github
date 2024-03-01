@@ -93,7 +93,7 @@ gcloud compute instances create vm1 --zone=us-central1-a --image=ubuntu-2004-foc
 
 ## Establish SSH connectivity to the VM
 - Launch your instance through the VM instances dashboard on Google Cloud Platform.
-- Ensure that the gcloud SDK is configured for your project in your local terminal. Use `gcloud config list` to view your current configuration details.
+- Ensure that the Google Cloud SDK is configured for your project in your local terminal. Use `gcloud config list` to view your current configuration details.
 - If the current config doesn't match the desired account:
   - Utilize `gcloud config configurations list` to see available configurations and their associated accounts.
   - Switch to the desired config using `gcloud config configurations activate <my-project-name>
