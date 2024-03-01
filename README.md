@@ -172,7 +172,7 @@ terraform plan
 terraform apply
 ```
 
-Now, ensure that you've successfully set up a bucket named "data_lake" and a dataset named "gh-archive-all" in Google BigQuery.
+Now, ensure that you've successfully set up a bucket named `data_lake` and a dataset named `gh-archive-all` in Google BigQuery.
 
 
 ## Establish data ingestion using Airflow.
