@@ -198,6 +198,7 @@ docker-compose up
 ```
 
 - You can now view the Airflow web interface by navigating to localhost:8080. Use "airflow" as both the username and password.
+- Make sure you don't use these credentials in production, they are only for testing!
 
 ## Execute the data ingestion process
 - This DAG retrieves data from February 1, 2024, up to February 27, 2024.
