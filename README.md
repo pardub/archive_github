@@ -212,7 +212,7 @@ docker-compose up
 
 ## Establishing the configuration for dbt Cloud.
 
-- Sign up for a dbt Cloud account at https://www.getdbt.com/signup.
+- Sign up for a [dbt Cloud account](https://www.getdbt.com/signup)
 - Create a new project and name it, such as `gh-archive`. In the Advanced settings, set the Project subdirectory to `dbt`.
 - Choose BigQuery as the database connection.
 - Configure the following settings:
