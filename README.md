@@ -16,7 +16,7 @@ The goals are:
   - Workflow Management: Airflow for orchestration (Airflow has been chosen over Mage as it is currently the most widely used in the industry, and I believe it's a good idea to practice it).
   - Data Storage: BigQuery for Data Warehousing
   - Data Lake Storage: Google Cloud Storage
-  - Batch Processing and Transformations: Utilizing dbt cloud and Spark
+  - Batch Processing and Transformations: Utilizing dbt cloud.
   - Dashboard Creation: Google Data Looker Studio
     
 ## Architecture of the Project
