@@ -58,7 +58,6 @@ Activate the following APIs:
 
 - IAM API: https://console.cloud.google.com/apis/library/iam.googleapis.com
 - IAM Credentials API: https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com
-- If any of these steps seem unfamiliar, please refer to Lesson 1.3.1 - Introduction to Terraform Concepts & GCP Pre-Requisites on YouTube, or consult my notes for guidance.
 
 ## Establishing an environment variable for the credentials
 
