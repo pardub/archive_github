@@ -79,13 +79,13 @@ gcloud auth application-default login
 
 ## Setting up Google Cloud SDK :
 
-- Download the Google Cloud SDK from the provided link and install it based on your operating system's instructions.
+- Download the [Google Cloud SDK](https://cloud.google.com/sdk/docs/install)  and install it based on your operating system's instructions.
 - Initiate the SDK by executing `gcloud init` in a terminal and adhere to the instructions provided.
 - Confirm that your project is selected by running `gcloud config list`.
 
 ## Creating a virtual machine (VM) on Google Cloud Platform (GCP) 
-- The following command will create a VM using  the SDK.
-- Change the virtual machine's name to one of your preference and select a zone that suits your requirements.
+- The following command will create a VM with Ubuntu using the SDK.
+- Change the virtual machine's name to one of your preference and select a geographic zone that suits your requirements.
 
 ```sh
 gcloud compute instances create vm1 --zone=us-central1-a --image=ubuntu-2004-focal-v20240209 --image-project=ubuntu-os-cloud --machine-type=e2-standard-4 --boot-disk-size=30GB
