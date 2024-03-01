@@ -232,7 +232,7 @@ docker-compose up
 - To resolve this, I had to include the following line in the Airflow DAG:
 
 `df['created_at'] = pd.to_datetime(df['created_at']).dt.strftime('%Y-%m-%d %H:%M:%S')`
-- This adjustment allowed dbt run to execute successfully.
+- This adjustment allowed `dbt run` to execute successfully.
 
 ## Rolling out models in dbt Cloud in a Production environment
 Here's how to deploy models in dbt Cloud with a Production environment:
