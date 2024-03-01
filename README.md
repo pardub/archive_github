@@ -103,7 +103,7 @@ gcloud compute instances create vm1 --zone=us-central1-a --image=ubuntu-2004-foc
   - This command will provide the hostname of your instance in the format: `instance.zone.project`. Make sure to note it down.
 - You can now open a terminal and use SSH to connect to your VM instance using this command: `ssh instance.zone.project`
   
-## Initiating and halting your instance using the gcloud SDK
+## Initiating and stopping your instance using the gcloud SDK
 - Starting your instance:
 ```sh
 gcloud compute instances list
