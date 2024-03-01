@@ -136,9 +136,9 @@ gcloud compute instances list
     wget https://github.com/docker/compose/releases/download/v2.24.6/docker-compose-linux-x86_64 -O docker-compose
     ```
       - Make doker compose file executable with ```sh chmod +x docker-compose```
-      - Run this command echo `'export PATH="${HOME}/bin:${PATH}"' >> ~/.bashrc`  to update your path environment variable: 
+      - Run this command echo `'export PATH="${HOME}/bin:${PATH}"' >> ~/.bashrc`  to update your path environment variable.
  
-Logout from your session and login again or run  `source .bashrc` to reload the path environment variable
+Logout from your session and login again or run  `source .bashrc` to reload the path environment variable.
 
 ## Terraform
 - Installation:
