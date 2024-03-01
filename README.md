@@ -56,8 +56,8 @@ Note: If you're utilizing a VM as advised, ensure to upload this credentials fil
 
 Activate the following APIs:
 
-- IAM API: https://console.cloud.google.com/apis/library/iam.googleapis.com
-- IAM Credentials API: https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com
+- [IAM API](https://console.cloud.google.com/apis/library/iam.googleapis.com)
+- [IAM Credentials API](https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com)
 
 ## Establishing an environment variable for the credentials
 
