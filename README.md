@@ -61,9 +61,9 @@ Activate the following APIs:
 
 ## Establishing an environment variable for the credentials
 
-- Set up an environment variable named GOOGLE_APPLICATION_CREDENTIALS and allocate it the pathway to your JSON credentials file, typically located at $HOME/.google/credentials/.
+- Set up an environment variable named `GOOGLE_APPLICATION_CREDENTIALS` and allocate it the pathway to your JSON credentials file, typically located at `$HOME/.google/credentials/`.
 
-- Run this command that will append the export statement to the .bashrc file in your home directory. Make sure to replace <path/to/authkeys>.json with the actual path to your JSON credentials file.
+- Run this command that will append the export statement to the `.bashrc` file in your home directory. Make sure to replace `<path/to/authkeys>.json` with the actual path to your JSON credentials file.
 
 ```sh
 echo 'export GOOGLE_APPLICATION_CREDENTIALS="<path/to/authkeys>.json"' >> ~/.bashrc
