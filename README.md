@@ -182,7 +182,7 @@ Now, ensure that you've successfully set up a bucket named `data_lake` and a dat
 ```sh
 echo -e "AIRFLOW_UID=$(id -u)"
 ```
-- Access the `.env` file and update the AIRFLOW_UID value to match the output of the preceding command.
+- Access the `.env` file and update the `AIRFLOW_UID` value to match the output of the preceding command.
 - Update the `GCP_PROJECT_ID` with your Google Cloud project ID and replace `GCP_GCS_BUCKET` with the name of your bucket.
 - Build the custom Airflow Docker image: 
 ```sh
