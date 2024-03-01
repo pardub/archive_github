@@ -25,6 +25,7 @@ The goals are:
   - Following this, the data undergoes preprocessing using Airflow before being migrated to a Data Warehouse, specifically BigQuery.
   - Once in the Data Warehouse, the data undergoes transformation and preparation with Dbt to make it suitable for visualization purposes.
   - Finally, dashboards are created to present the processed data effectively.
+    
 ![picture_project_infrastructure](https://github.com/pardub/archive_github/assets/42610272/d9aca2f0-6596-4da2-8e1e-4917f8b3fc43)
 
 ### Dashboard
