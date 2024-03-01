@@ -113,7 +113,7 @@ gcloud compute instances list
   gcloud compute instances stop <my_instance>
   ```
 ## Setting up the necessary tools on the virtual machine
-- connect to your vm by ssh.
+- Connect to your vm by ssh.
 - Install Docker :
   ```sh
   sudo apt update && sudo apt -y upgrade
