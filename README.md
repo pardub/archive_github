@@ -33,16 +33,13 @@ The goals are:
 
 # Setup
 
-You will need :
-- A Google Cloud Platform account https://cloud.google.com/
-
 To replicate the project, you'll need the following :
 
-A Google Cloud Platform (GCP) account.
-(Optional) The Google Cloud SDK for streamlined installation and management.
-(Optional) An SSH client for terminal access.
-(Optional) VSCode with the Remote-SSH extension for convenient port forwarding.
-The development and testing phase utilized a Google Cloud Compute VM instance. It's highly recommended to employ a VM instance for reproducing the project.
+- A Google Cloud Platform (GCP) account.
+- (Optional) The Google Cloud SDK for streamlined installation and management.
+- (Optional) An SSH client for terminal access.
+- (Optional) VSCode with the Remote-SSH extension for convenient port forwarding.
+- The development and testing phase utilized a Google Cloud Compute VM instance. It's highly recommended to employ a VM instance for reproducing the project.
 
 # Generate a Google Cloud Project
 - Navigate to the Google Cloud dashboard and initiate the creation of a new project by selecting it from the dropdown menu positioned at the top left corner of the screen, adjacent to the Google Cloud Platform label.
