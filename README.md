@@ -129,7 +129,7 @@ gcloud compute instances list
   ```
 - Test with docker by doing `run hello-world` to make sure Docker is correctly installed  on your vm.
  - Install Docker Compose :
-    - Create a folder bin in your home account with `mkdir ~/bin`
+    - Create a folder `bin` in your home account with `mkdir ~/bin`
     - Go to the folder with `cd ~/bin`
     - Download Docker Compose
     ```sh
