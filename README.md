@@ -228,7 +228,7 @@ docker-compose up
     - `dbt_dwh`: Stores the data warehouse materialized table with all ingested data.
     - `dbt_staging`: Contains the staging views for generating the final end-user tables.
 
-- Just for your information, I encountered some issues while running dbt run. The issue emerged due to errors related to the timestamp format for the `created at` field.
+- Just for your information, I encountered some issues while running `dbt run`. The issue emerged due to errors related to the timestamp format for the `created at` field.
 - To resolve this, I had to include the following line in the Airflow DAG:
 
 `df['created_at'] = pd.to_datetime(df['created_at']).dt.strftime('%Y-%m-%d %H:%M:%S')`
