@@ -1,4 +1,4 @@
-# Github archive project
+# Github Archive project
 ## Problem Description
 This project revolves around tracking and analyzing events occurring within GitHub. By examining these events, valuable insights into open-source development and community dynamics can be gained, for e.g, identify the repository with the highest number of commits, analyze the distribution of events by type or determine the user with the highest number of commits.
 
@@ -13,7 +13,7 @@ The goals are:
 
   - Cloud Provider: Google Cloud Platform (GCP)
   - Infrastructure Automation: Terraform for Infrastructure as Code (IaC)
-  - Workflow Management: Airflow for orchestration
+  - Workflow Management: Airflow for orchestration (Airflow has been chosen over Mage as it is currently the most widely used in the industry, and I believe it's a good idea to practice it).
   - Data Storage: BigQuery for Data Warehousing
   - Data Lake Storage: Google Cloud Storage
   - Batch Processing and Transformations: Utilizing dbt cloud and Spark
