@@ -202,7 +202,7 @@ docker-compose up
 
 ## Execute the data ingestion process
 - This DAG retrieves data from February 1, 2024, up to February 29, 2024.
-- You can modify the start date and end date by editing the variables `start_date` and `end_date` in the data_ingestion.py file.
+- You can modify the start date and end date by editing the variables `start_date` and `end_date` in the `data_ingestion.py` file.
 - To trigger the DAG, toggle the switch icon next to the DAG name. It will fetch data from the specified start date to the latest available hour and perform hourly checks every 30 minutes.
 - After ingestion, you can stop Airflow by running `docker-compose down` in the airflow folder where the `docker-compose.yaml` file is located.
 - Remember to power off the VM in Google Cloud Platform to prevent incurring unnecessary costs.
