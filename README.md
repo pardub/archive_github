@@ -219,7 +219,7 @@ docker-compose up
   - You can keep the default connection name.
   - Upload the Service Account JSON file, selecting the `google_credentials.json` created previously.
   - Ensure to input your Google Cloud location under Location (for e.g., US).
-  - Under Development credentials, specify a name for the dataset. This name will be added as a prefix to the schemas. For example, use "dbt".
+  - Under `Development credentials`, specify a name for the dataset. This name will be added as a prefix to the schemas. For example, use "dbt".
   - Test the connection, and click Continue once the connection is successfully tested.
 - In the Add repository form, select GitHub and choose your fork from your user account. Alternatively, you can provide a URL and clone the repo.
 - Once the project is created, navigate to the menu on the top left and click Develop to load the dbt Cloud IDE.
