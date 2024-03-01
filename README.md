@@ -69,7 +69,7 @@ Activate the following APIs:
 echo 'export GOOGLE_APPLICATION_CREDENTIALS="<path/to/authkeys>.json"' >> ~/.bashrc
 ```
 
-- Please logout and then log back into your current terminal session, or execute the command source ~/.bashrc to enable the environment variable.
+- Please logout and then log back into your current terminal session, or execute the command `source ~/.bashrc` to enable the environment variable.
 
 - Afterward, refresh the token and confirm authentication using the GCP SDK.
 
