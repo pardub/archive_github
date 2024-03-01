@@ -247,3 +247,32 @@ Here's how to deploy models in dbt Cloud with a Production environment:
 - In the Triggers section, within the Schedule tab, ensure that the "Run on schedule?" checkbox is selected.
 - Choose a custom cron schedule and input the string `40 * * * *`. This will execute the models every hour at the 40th minute. (Note: the DAG runs on the 30th minute, so the 10-minute delay ensures that the DAG is successfully executed.)
 - Save the job.
+
+## Developing a dashboard with Looker Studio
+- Go to https://lookerstudio.google.com/
+- Click on `Create` on the top left.
+- Select `Report`.
+- Select `Bigquery` in the list.
+- Select your project.
+- Select the dataset `production core`.
+- Select the table `users`.
+- Click on `add ` on the right bottom.
+- on the popup, click `Add to report`.
+- Delete the default chart.
+- Click on `Add a chart` In our example, we select `table`.
+- A table with `actor_login` and `Record Count` is added to the screen.
+- From the `data` panel on the left, drop down the `commit_count` to the left under `Metric`.
+- Under `Metric`, delete the `record Count`.
+
+You now have your first chart. Let's proceed with the second chart.
+
+- Click on the bottom right `Add Data`.
+- Repeat the same steps by selecting the dataset `production staging` this time and select `stg_commits`.
+- Click on `add` on the bottom right.
+- On the pop up, click `Add to report`.
+- Click on `Add a chart` and select `Bar`.
+- On the `data` area on the right, select `stg_commits`, then drop down the `created_at` field to the left under `Data Range Dimension`.
+- In Metrics,add the `Record Count`.
+
+You now have your second chart.
+you can change the name of your reports on the top left by clicking on `Untitled Report`.
