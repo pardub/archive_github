@@ -50,7 +50,7 @@ To replicate the project, you'll need the following :
     * Storage Object Admin
     * Viewer
       
-Download the credentials file for the Service Account and rename it to google_credentials.json. Store this file in your home folder at $HOME/.google/credentials/.
+Download the credentials file for the Service Account and rename it to `google_credentials.json`. Store this file in your home folder at `$HOME/.google/credentials/`.
 
 Note: If you're utilizing a VM as advised, ensure to upload this credentials file to the VM.
 
