@@ -217,7 +217,7 @@ docker-compose up
 - Choose BigQuery as the database connection.
 - Configure the following settings:
   - You can keep the default connection name.
-  - Upload the Service Account JSON file, selecting the "google_credentials.json" created previously.
+  - Upload the Service Account JSON file, selecting the `google_credentials.json` created previously.
   - Ensure to input your Google Cloud location under Location (for e.g., US).
   - Under Development credentials, specify a name for the dataset. This name will be added as a prefix to the schemas. For example, use "dbt".
   - Test the connection, and click Continue once the connection is successfully tested.
