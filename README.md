@@ -28,8 +28,10 @@ The goals are:
     
 ![picture_project_infrastructure](https://github.com/pardub/archive_github/assets/42610272/d9aca2f0-6596-4da2-8e1e-4917f8b3fc43)
 
+
 ### Dashboard
-![Looker_final_project](https://github.com/pardub/archive_github/assets/42610272/15106599-d017-4fe8-a74f-99d7b8f29225)
+![final_result_project_](https://github.com/pardub/archive_github/assets/42610272/2ba7b133-83d2-4812-a935-8e69db2f6eeb)
+
 
 # Setup
 
