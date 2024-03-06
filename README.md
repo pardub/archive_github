@@ -180,7 +180,7 @@ terraform apply
 Now, ensure that you've successfully set up a bucket named `data_lake` and a dataset named `gh-archive-all` in Google BigQuery.
 
 
-## Establish data ingestion using Airflow.
+## Establish data ingestion using Airflow
 
 - Go to `archive_github/airflow`
 - Run the following command and write down the output:
@@ -212,7 +212,7 @@ docker-compose up
 - After ingestion, you can stop Airflow by running `docker-compose down` in the airflow folder where the `docker-compose.yaml` file is located.
 - Remember to power off the VM in Google Cloud Platform to prevent incurring unnecessary costs.
 
-## Establishing the configuration for dbt Cloud.
+## Establishing the configuration for dbt Cloud
 
 - Sign up for a [dbt Cloud account](https://www.getdbt.com/signup)
 - Create a new project and name it, such as `gh-archive`. In the Advanced settings, set the Project subdirectory to `dbt`.
