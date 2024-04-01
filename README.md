@@ -278,3 +278,5 @@ You now have your first chart. Let's proceed with the second chart.
 
 You now have your second chart.
 you can change the name of your reports on the top left by clicking on `Untitled Report`.
+
+The final result of that project can be found on https://lookerstudio.google.com/s/gmzQTVMAssU
